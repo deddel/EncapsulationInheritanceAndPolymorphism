@@ -21,8 +21,8 @@ namespace Ovning3
 
         public static void TalkToPerson(Person pers)
         {
-            Console.WriteLine($"Howdy, nice to meet you! My name is {pers.FName}. I am {pers.Age} years old." +
-                $"I was hoping you could help with my duties.");
+            Console.WriteLine($"Hej, trevlig att träffas! Jag heter {pers.FName} {pers.LName}. \nJag är {pers.Age} år gammal." +
+                $" Kan du hjälpa mig med mina sysslor?");
         }
     }
 
