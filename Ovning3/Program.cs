@@ -64,15 +64,15 @@ namespace Ovning3
                     #endregion
 
                     #region 3.3
-                    //Animal horse = new Horse("Copiad", 550, 23, 56);
-                    //Animal dog = new Dog("Pluto", 16, 9, "Bloodhound");
-                    //Animal hedgeHog = new Hedgehog("Harry", 1, 5, 5600);
-                    //Animal worm = new Worm("Willy", 1, 3, false);
-                    //Animal bird = new Bird("Donald Duck", 1, 6, 81);
-                    //Animal wolf = new Wolf("Akela", 25, 10, "grey");
-                    //Animal pelican = new Pelican("Pelle", 4, 12, 210, "Great white pelican");
-                    //Animal flamingo = new Flamingo("Florence", 3, 11, 145, "North America");
-                    //Animal swan = new Swan("Sweetie", 9, 7, 200, true);
+                    Animal horse = new Horse("Copiad", 550, 23, 56);
+                    Animal dog = new Dog("Pluto", 16, 9, "Bloodhound");
+                    Animal hedgeHog = new Hedgehog("Harry", 1, 5, 5600);
+                    Animal worm = new Worm("Willy", 1, 3, false);
+                    Animal bird = new Bird("Donald Duck", 1, 6, 81);
+                    Animal wolf = new Wolf("Akela", 25, 10, "grey");
+                    Animal pelican = new Pelican("Pelle", 4, 12, 210, "Great white pelican");
+                    Animal flamingo = new Flamingo("Florence", 3, 11, 145, "North America");
+                    Animal swan = new Swan("Sweetie", 9, 7, 200, true);
 
                     ////Sound
                     //horse.DoSound();
@@ -86,14 +86,24 @@ namespace Ovning3
                     //swan.DoSound();
 
                     //Wolfman wolfman = new Wolfman("Lawrence Talbot", 80, 43, "");
-                    IPerson wolfman = new Wolfman("Lawrence Talbot", 80, 43, "Dark grey");
-                    wolfman.Talk("I wish things were different.");
+                    //IPerson wolfman = new Wolfman("Lawrence Talbot", 80, 43, "Dark grey");
+                    //wolfman.Talk("I wish things were different.");
 
                     //Answer to Question 3.3.13: The Bird class
                     //Answer to Question 3.3.14: The Animal class
                     #endregion
 
                     #region 3.4
+
+                    Console.WriteLine(horse.Stats());
+                    Console.WriteLine(dog.Stats());
+                    Console.WriteLine(hedgeHog.Stats());
+                    Console.WriteLine(worm.Stats());
+                    Console.WriteLine(bird.Stats());
+                    Console.WriteLine(wolf.Stats());
+                    Console.WriteLine(pelican.Stats());
+                    Console.WriteLine(flamingo.Stats());
+                    Console.WriteLine(swan.Stats());
 
                     #endregion
                 }

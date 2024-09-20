@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +11,7 @@ namespace Ovning3
     internal abstract class Animal
     {
         public string Name { get; set; }
-        public int Weight { get; set; }
+        public int Weight { get; set; } //TODO Change to double
         public int Age { get; set; }
 
         protected Animal(string name, int weight, int age)
@@ -19,7 +21,13 @@ namespace Ovning3
             Age = age;
         }
 
-        public abstract void DoSound(); 
+        public abstract void DoSound();
+
+        public virtual string Stats()
+        {
+            string propertiesString = $"Name: {Name},  Weight: {Weight},  Age: {Age}";
+            return propertiesString;
+        }
 
     }
 
@@ -37,6 +45,13 @@ namespace Ovning3
             Console.WriteLine("Weee ho ho ho");
             //return "Weee ho ho ho";
         }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, TopSpeed: {TopSpeed}";
+            return propertiesString;
+        }
+
     }
     internal class Dog : Animal
     {
@@ -52,6 +67,12 @@ namespace Ovning3
             Console.WriteLine("Woff Woff");
             //return "Woff Woff";
         }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, Breed: {Breed}";
+            return propertiesString;
+        }
     }
     internal class Hedgehog : Animal
     {
@@ -65,6 +86,12 @@ namespace Ovning3
         {
             Console.WriteLine("Hrhg hrgh");
             //return "Hrhg hrgh";
+        }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, NumberOfSpikes: {NumberOfSpikes}";
+            return propertiesString;
         }
     }
     internal class Worm : Animal
@@ -80,7 +107,14 @@ namespace Ovning3
             Console.WriteLine("Grrsss");
             //return "Grrsss";
         }
-    }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, IsPoisonous: {IsPoisonous}";
+            return propertiesString;
+        }
+
+}
     internal class Bird : Animal
     {
         public int WingSpan { get; set; }
@@ -95,6 +129,13 @@ namespace Ovning3
             Console.WriteLine("Chirp Chitt Chitt");
             //return "Chirp Chitt Chitt";
         }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, WingSpan: {WingSpan}";
+            return propertiesString;
+        }
+
     }
 
     internal class Pelican : Bird
@@ -105,6 +146,12 @@ namespace Ovning3
         {
             SubSpieces = subSpieces;
         }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, SubSpieces: {SubSpieces}";
+            return propertiesString;
+        }
     }
     internal class Flamingo : Bird
     {
@@ -114,6 +161,12 @@ namespace Ovning3
             Continent = continent;
         }
 
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, SubSpieces: {Continent}";
+            return propertiesString;
+        }
+
     }
     internal class Swan : Bird
     {
@@ -121,6 +174,12 @@ namespace Ovning3
         public Swan(string name, int weight, int age, int wingSpan, bool migratory) : base(name, weight, age, wingSpan)
         {
             Migratory = migratory;
+        }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, Migratory: {Migratory}";
+            return propertiesString;
         }
 
     }
@@ -141,6 +200,12 @@ namespace Ovning3
         {
             Console.WriteLine("Aooooooouuuu");
             //return "Aooooooouuuu";
+        }
+
+        public override string Stats()
+        {
+            string propertiesString = $"{base.Stats()}, Colour: {Colour}";
+            return propertiesString;
         }
     }
 }
