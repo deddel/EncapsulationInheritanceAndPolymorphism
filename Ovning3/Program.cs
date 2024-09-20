@@ -64,9 +64,29 @@ namespace Ovning3
                     #endregion
 
                     #region 3.3
-                    Animal a1 = new Horse("Copiad", 550, 23);
-                    a1.DoSound();
+                    //Animal horse = new Horse("Copiad", 550, 23, 56);
+                    //Animal dog = new Dog("Pluto", 16, 9, "Bloodhound");
+                    //Animal hedgeHog = new Hedgehog("Harry", 1, 5, 5600);
+                    //Animal worm = new Worm("Willy", 1, 3, false);
+                    //Animal bird = new Bird("Donald Duck", 1, 6, 81);
+                    //Animal wolf = new Wolf("Akela", 25, 10, "grey");
+                    //Animal pelican = new Pelican("Pelle", 4, 12, 210, "Great white pelican");
+                    //Animal flamingo = new Flamingo("Florence", 3, 11, 145, "North America");
+                    //Animal swan = new Swan("Sweetie", 9, 7, 200, true);
+
+                    ////Sound
+                    //horse.DoSound();
+                    //dog.DoSound();
+                    //hedgeHog.DoSound();
+                    //worm.DoSound();
+                    //bird.DoSound();
+                    //wolf.DoSound();
+                    //pelican.DoSound();
+                    //flamingo.DoSound();
+                    //swan.DoSound();
                     #endregion
+                
+                
                 }
                 catch (ArgumentException ex)
                 {

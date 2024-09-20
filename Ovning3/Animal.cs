@@ -25,8 +25,11 @@ namespace Ovning3
 
     internal class Horse : Animal
     {
-        public Horse(string name, int weight, int age) : base(name, weight, age)
+        public int TopSpeed { get; set; }
+        public Horse(string name, int weight, int age, int topSpeed) : base(name, weight, age)
+        
         {
+            TopSpeed = topSpeed;
         }
 
         public override void DoSound()
@@ -37,9 +40,12 @@ namespace Ovning3
     }
     internal class Dog : Animal
     {
-        public Dog(string name, int weight, int age) : base(name, weight, age)
+        public string Breed { get; set; }
+        public Dog(string name, int weight, int age, string breed) : base(name, weight, age)
         {
+            Breed = breed;
         }
+
 
         public override void DoSound()
         {
@@ -49,8 +55,10 @@ namespace Ovning3
     }
     internal class Hedgehog : Animal
     {
-        public Hedgehog(string name, int weight, int age) : base(name, weight, age)
+        public int NumberOfSpikes { get; set; }
+        public Hedgehog(string name, int weight, int age, int numberOfSpikes) : base(name, weight, age)
         {
+            NumberOfSpikes = numberOfSpikes;
         }
 
         public override void DoSound()
@@ -61,8 +69,10 @@ namespace Ovning3
     }
     internal class Worm : Animal
     {
-        public Worm(string name, int weight, int age) : base(name, weight, age)
+        public bool IsPoisonous { get; set; }
+        public Worm(string name, int weight, int age, bool isPoisonous) : base(name, weight, age)
         {
+            IsPoisonous = isPoisonous;
         }
 
         public override void DoSound()
@@ -73,9 +83,12 @@ namespace Ovning3
     }
     internal class Bird : Animal
     {
-        public Bird(string name, int weight, int age) : base(name, weight, age)
+        public int WingSpan { get; set; }
+        public Bird(string name, int weight, int age, int wingSpan) : base(name, weight, age)
         {
+            WingSpan = wingSpan;
         }
+
 
         public override void DoSound()
         {
@@ -84,11 +97,45 @@ namespace Ovning3
         }
     }
 
+    internal class Pelican : Bird
+    {
+        
+        public string SubSpieces { get; set; }
+        public Pelican(string name, int weight, int age, int wingSpan, string subSpieces) : base(name, weight, age, wingSpan)
+        {
+            SubSpieces = subSpieces;
+        }
+    }
+    internal class Flamingo : Bird
+    {
+        public string Continent { get; set; }
+        public Flamingo(string name, int weight, int age, int wingSpan, string continent) : base(name, weight, age, wingSpan)
+        {
+            Continent = continent;
+        }
+
+    }
+    internal class Swan : Bird
+    {
+        public bool Migratory { get; set; }
+        public Swan(string name, int weight, int age, int wingSpan, bool migratory) : base(name, weight, age, wingSpan)
+        {
+            Migratory = migratory;
+        }
+
+    }
+
+
+
+
     internal class Wolf : Animal
     {
-        public Wolf(string name, int weight, int age) : base(name, weight, age)
+        public string Colour { get; set; }
+        public Wolf(string name, int weight, int age, string colour) : base(name, weight, age)
         {
+            Colour = colour;
         }
+
 
         public override void DoSound()
         {
