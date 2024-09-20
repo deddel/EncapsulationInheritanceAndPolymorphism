@@ -84,9 +84,18 @@ namespace Ovning3
                     //pelican.DoSound();
                     //flamingo.DoSound();
                     //swan.DoSound();
+
+                    //Wolfman wolfman = new Wolfman("Lawrence Talbot", 80, 43, "");
+                    IPerson wolfman = new Wolfman("Lawrence Talbot", 80, 43, "Dark grey");
+                    wolfman.Talk("I wish things were different.");
+
+                    //Answer to Question 3.3.13: The Bird class
+                    //Answer to Question 3.3.14: The Animal class
                     #endregion
-                
-                
+
+                    #region 3.4
+
+                    #endregion
                 }
                 catch (ArgumentException ex)
                 {

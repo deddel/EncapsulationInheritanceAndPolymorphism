@@ -84,5 +84,9 @@ namespace Ovning3
         public double Height { get { return height; } set { height = value; } }
         public double Weight { get { return weight; } set { weight = value; } }
 
+        //public static implicit operator Person(Wolfman v)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
