@@ -64,6 +64,7 @@ namespace Ovning3
                     #endregion
 
                     #region 3.3
+                    //Testdata
                     Animal horse = new Horse("Copiad", 550, 23, 56);
                     Animal dog = new Dog("Pluto", 16, 9, "Bloodhound");
                     Animal hedgeHog = new Hedgehog("Harry", 1, 5, 5600);
@@ -85,7 +86,7 @@ namespace Ovning3
                     //flamingo.DoSound();
                     //swan.DoSound();
 
-                    //Wolfman wolfman = new Wolfman("Lawrence Talbot", 80, 43, "");
+                    Wolfman wolfman = new Wolfman("Lawrence Talbot", 80, 43, "Dark grey");
                     //IPerson wolfman = new Wolfman("Lawrence Talbot", 80, 43, "Dark grey");
                     //wolfman.Talk("I wish things were different.");
 
@@ -95,15 +96,56 @@ namespace Ovning3
 
                     #region 3.4
 
-                    Console.WriteLine(horse.Stats());
-                    Console.WriteLine(dog.Stats());
-                    Console.WriteLine(hedgeHog.Stats());
-                    Console.WriteLine(worm.Stats());
-                    Console.WriteLine(bird.Stats());
-                    Console.WriteLine(wolf.Stats());
-                    Console.WriteLine(pelican.Stats());
-                    Console.WriteLine(flamingo.Stats());
-                    Console.WriteLine(swan.Stats());
+                    //Console.WriteLine(horse.Stats());
+                    //Console.WriteLine(dog.Stats());
+                    //Console.WriteLine(hedgeHog.Stats());
+                    //Console.WriteLine(worm.Stats());
+                    //Console.WriteLine(bird.Stats());
+                    //Console.WriteLine(wolf.Stats());
+                    //Console.WriteLine(pelican.Stats());
+                    //Console.WriteLine(flamingo.Stats());
+                    //Console.WriteLine(swan.Stats());
+
+                    List<Animal> animals = new List<Animal>();
+
+                    animals.Add(horse);
+                    animals.Add(dog);
+                    animals.Add(hedgeHog);
+                    animals.Add(worm);
+                    animals.Add(bird);
+                    animals.Add(wolf);
+                    animals.Add(pelican);
+                    animals.Add(flamingo);
+                    animals.Add(swan);
+                    animals.Add(bird);
+                    animals.Add(wolfman);
+
+                    foreach (Animal animal in animals) 
+                    {
+                        Console.Write($"{animal.GetType().Name}, ");
+                        if (animal is IPerson castedToWolfman) 
+                        {
+                            castedToWolfman.Talk("I wish things were different."); 
+                        }
+                        animal.DoSound();
+                        Console.WriteLine();
+                    }
+
+                    List<Dog> dogs = new List<Dog>();
+                    //dogs.Add(horse); 
+                    //Answer to Question 3.3.13: Not possible because Dog and Horse
+                    //are separate classes and both inherits from Animal but have no
+                    //direkt relation to each other.
+
+                    //Answer to Question 3.3.13: The list must be of type Animal.
+
+                    foreach (Animal animal in animals)
+                    {
+                        Console.Write($"{animal.GetType().Name}, ");
+                        Console.WriteLine(animal.Stats());
+                        Console.WriteLine();
+                    }
+                    //Answer to Question 3.3.13: 
 
                     #endregion
                 }

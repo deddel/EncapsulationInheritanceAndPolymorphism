@@ -24,11 +24,5 @@ namespace Ovning3
             Console.WriteLine(value: qoute);
         }
 
-        //public string Quote { get; set; }
-
-        //public string Talk()
-        //{
-        //    Console.WriteLine("quote"); ;
-        //}
     }
 }

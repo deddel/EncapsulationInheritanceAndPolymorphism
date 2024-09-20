@@ -25,8 +25,7 @@ namespace Ovning3
 
         public virtual string Stats()
         {
-            string propertiesString = $"Name: {Name},  Weight: {Weight},  Age: {Age}";
-            return propertiesString;
+            return $"Name: {Name},  Weight: {Weight},  Age: {Age}";
         }
 
     }
@@ -43,13 +42,11 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("Weee ho ho ho");
-            //return "Weee ho ho ho";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, TopSpeed: {TopSpeed}";
-            return propertiesString;
+            return $"{base.Stats()}, TopSpeed: {TopSpeed}";
         }
 
     }
@@ -61,17 +58,14 @@ namespace Ovning3
             Breed = breed;
         }
 
-
         public override void DoSound()
         {
             Console.WriteLine("Woff Woff");
-            //return "Woff Woff";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, Breed: {Breed}";
-            return propertiesString;
+            return $"{base.Stats()}, Breed: {Breed}";
         }
     }
     internal class Hedgehog : Animal
@@ -85,13 +79,11 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("Hrhg hrgh");
-            //return "Hrhg hrgh";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, NumberOfSpikes: {NumberOfSpikes}";
-            return propertiesString;
+            return $"{base.Stats()}, NumberOfSpikes: {NumberOfSpikes}";
         }
     }
     internal class Worm : Animal
@@ -105,13 +97,11 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("Grrsss");
-            //return "Grrsss";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, IsPoisonous: {IsPoisonous}";
-            return propertiesString;
+            return $"{base.Stats()}, IsPoisonous: {IsPoisonous}";
         }
 
 }
@@ -127,13 +117,11 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("Chirp Chitt Chitt");
-            //return "Chirp Chitt Chitt";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, WingSpan: {WingSpan}";
-            return propertiesString;
+            return $"{base.Stats()}, WingSpan: {WingSpan}";
         }
 
     }
@@ -149,8 +137,7 @@ namespace Ovning3
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, SubSpieces: {SubSpieces}";
-            return propertiesString;
+            return $"{base.Stats()}, SubSpieces: {SubSpieces}";
         }
     }
     internal class Flamingo : Bird
@@ -163,8 +150,7 @@ namespace Ovning3
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, SubSpieces: {Continent}";
-            return propertiesString;
+            return $"{base.Stats()}, Continent: {Continent}";
         }
 
     }
@@ -178,8 +164,7 @@ namespace Ovning3
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, Migratory: {Migratory}";
-            return propertiesString;
+            return $"{base.Stats()}, Migratory: {Migratory}";
         }
 
     }
@@ -199,13 +184,11 @@ namespace Ovning3
         public override void DoSound()
         {
             Console.WriteLine("Aooooooouuuu");
-            //return "Aooooooouuuu";
         }
 
         public override string Stats()
         {
-            string propertiesString = $"{base.Stats()}, Colour: {Colour}";
-            return propertiesString;
+            return $"{base.Stats()}, Colour: {Colour}";
         }
     }
 }
