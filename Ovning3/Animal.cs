@@ -67,6 +67,13 @@ namespace Ovning3
         {
             return $"{base.Stats()}, Breed: {Breed}";
         }
+
+        //3.4.15
+        public string DogOutputString(string str)
+        {
+            return str;
+        }
+
     }
     internal class Hedgehog : Animal
     {
